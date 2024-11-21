@@ -1,0 +1,49 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+
+.footer-logo {
+	max-width: 100%; /* Ensure it fits within the widget container */
+	height: auto; /* Maintain the aspect ratio */
+	display: block; /* Remove any inline-block gaps */
+	margin: 0 0 0 0;
+}
+
+.footer-widget {
+	max-width: 400px; /* Adjust the width of the widget container */
+	overflow: hidden; /* Ensure nothing overflows */
+}
+
+.parallax-bg {
+	opacity: 0.4; /* Adjust this value for more or less transparency */
+}
+
+.parallax-bg-1 {
+	opacity: 0.9; /* Adjust this value for more or less transparency */
+}
+
+/*.card {
+	position: relative;
+	overflow: hidden;
+}
+
+.card::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url('/images/services/blinds.jpg') no-repeat top center / cover;
+	opacity: 0.5;*/ /* Adjust this value for opacity */
+	/*z-index: 1;*/ /* Ensures the image stays behind the content */
+/*}
+
+.card-body {
+	position: relative;
+	z-index: 2;*/ /* Ensures the content stays above the image */
+/*}*/

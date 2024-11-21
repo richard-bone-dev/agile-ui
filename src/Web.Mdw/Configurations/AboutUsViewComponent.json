@@ -1,0 +1,18 @@
+﻿{
+  "AboutUsOptions": {
+    "Image": {
+      "Src": "/images/about/me.jpg",
+      "Alt": "MD Wigmore | Over 20 Years of Professional Painting & Decorating",
+      "Title": "MD Wigmore | Over 20 Years of Professional Painting & Decorating",
+      "Animation": "fadeInLeftBig"
+    },
+    "Title": "Meet <span>MD Wigmore</span> – Your Trusted Painting Professional",
+    "P1": "With over 20 years of experience, I’ve built MD Wigmore to provide top-quality painting and decorating services that make a real difference. From homes to commercial spaces, my goal has always been the same—delivering work that speaks for itself, with a finish you can be proud of.",
+    "P2": "Whether you’re refreshing a room or giving an entire property a new look, you’ll get professional, reliable service every step of the way. If you’re looking for painting that’s done right, I’m here to make sure your space looks its best.",
+    "CallToAction": {
+      "Text": "Call Now",
+      "Href": "tel:07930645116",
+      "Class": "btn btn-danger m-0"
+    }
+  }
+}

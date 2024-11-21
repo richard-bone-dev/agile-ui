@@ -1,0 +1,112 @@
+{
+  "ServicesOptions": {
+    "Title": "Our Services",
+    "Subtitle": "Expert Painting & Decorating Solutions for Every Space",
+    "Items": [
+      {
+        "ImageUrl": "/images/services/interior-painting.jpg",
+        "Category": "Interior Painting",
+        "Title": "Residential & Commercial",
+        "Description": "Flawless wall and ceiling painting for homes and businesses, including custom finishes like accent walls and decorative painting.",
+        "LinkUrl": "#",
+        "ButtonIcon": "bi-arrow-right"
+      },
+      {
+        "ImageUrl": "/images/services/exterior-painting.jpg",
+        "Category": "Exterior Painting",
+        "Title": "Facade & Structure Painting",
+        "Description": "Transform your property's exterior with durable, weather-resistant finishes for homes, garages, and commercial buildings.",
+        "LinkUrl": "#",
+        "ButtonIcon": "bi-arrow-right"
+      },
+      {
+        "ImageUrl": "/images/services/wallpaper.jpg",
+        "Category": "Wallpaper Services",
+        "Title": "Installation & Removal",
+        "Description": "Expert wallpaper installation and removal, ensuring smooth finishes and modern or classic designs tailored to your style.",
+        "LinkUrl": "#",
+        "ButtonIcon": "bi-arrow-right"
+      },
+      {
+        "ImageUrl": "/images/services/decorative-finishes.jpg",
+        "Category": "Decorative Finishes",
+        "Title": "Textures & Effects",
+        "Description": "Custom textures, murals, and faux finishes like marbleizing and wood grain for unique, high-end designs.",
+        "LinkUrl": "#",
+        "ButtonIcon": "bi-arrow-right"
+      },
+      {
+        "ImageUrl": "/images/services/cabinet-painting.jpg",
+        "Category": "Cabinet Painting",
+        "Title": "Painting & Refinishing",
+        "Description": "Refresh your cabinets with spraying, hand-painting, staining, or sealing for a stunning, updated look.",
+        "LinkUrl": "#",
+        "ButtonIcon": "bi-arrow-right"
+      },
+      {
+        "ImageUrl": "/images/services/surface-repairs.jpg",
+        "Category": "Surface Preparation",
+        "Title": "Repairs & Restoration",
+        "Description": "Drywall repairs, plastering, and caulking to prep your surfaces for the perfect finish.",
+        "LinkUrl": "#",
+        "ButtonIcon": "bi-arrow-right"
+      },
+      {
+        "ImageUrl": "/images/services/epoxy-flooring.jpg",
+        "Category": "Epoxy Coatings",
+        "Title": "Durable Floors",
+        "Description": "High-performance epoxy floor coatings for garages, basements, and commercial spaces, with anti-slip and decorative options.",
+        "LinkUrl": "#",
+        "ButtonIcon": "bi-arrow-right"
+      },
+      {
+        "ImageUrl": "/images/services/staining.jpg",
+        "Category": "Staining & Varnishing",
+        "Title": "Wood Finishing",
+        "Description": "Protect and enhance wood surfaces with expert staining and varnishing for long-lasting beauty.",
+        "LinkUrl": "#",
+        "ButtonIcon": "bi-arrow-right"
+      },
+      {
+        "ImageUrl": "/images/services/pressure-washing.jpg",
+        "Category": "Power Washing",
+        "Title": "Cleaning Services",
+        "Description": "Remove dirt, mold, and grime from exteriors, decks, and driveways before painting or staining.",
+        "LinkUrl": "#",
+        "ButtonIcon": "bi-arrow-right"
+      },
+      {
+        "ImageUrl": "/images/services/color-consultation.jpg",
+        "Category": "Color Consultation",
+        "Title": "Design Services",
+        "Description": "Expert advice to select colors and finishes that match your vision for residential and commercial spaces.",
+        "LinkUrl": "#",
+        "ButtonIcon": "bi-arrow-right"
+      },
+      {
+        "ImageUrl": "/images/services/industrial-painting.jpg",
+        "Category": "Industrial Painting",
+        "Title": "Durable Coatings",
+        "Description": "Specialized coatings for industrial facilities, machinery, and steel structures, providing rust and chemical protection.",
+        "LinkUrl": "#",
+        "ButtonIcon": "bi-arrow-right"
+      },
+      {
+        "ImageUrl": "/images/services/maintenance.jpg",
+        "Category": "Property Maintenance",
+        "Title": "Ongoing Services",
+        "Description": "Regular touch-ups and painting services to keep properties in top condition for landlords and businesses.",
+        "LinkUrl": "#",
+        "ButtonIcon": "bi-arrow-right"
+      },
+      {
+        "ImageUrl": "/images/services/safety-coatings.jpg",
+        "Category": "Safety Coatings",
+        "Title": "Fireproofing & Protection",
+        "Description": "Specialized coatings for fire resistance, mold protection, and anti-graffiti purposes for commercial and industrial spaces.",
+        "LinkUrl": "#",
+        "ButtonIcon": "bi-arrow-right"
+      }
+    ]
+  }
+}

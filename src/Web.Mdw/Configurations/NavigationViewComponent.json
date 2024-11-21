@@ -1,0 +1,129 @@
+﻿{
+  "MenuItems": [
+    {
+      "Title": "Home",
+      "Href": "/",
+      "IsActive": false,
+      "Icon": "fa-home",
+      "SubMenuItems": []
+    },
+    {
+      "Title": "Services",
+      "Href": "/services",
+      "IsActive": false,
+      "Icon": "fa-paint-brush",
+      "SubMenuItems": [
+        {
+          "Title": "Interior Painting",
+          "Href": "/services/interior-painting",
+          "IsActive": false,
+          "SubMenuItems": [
+            {
+              "Title": "Residential",
+              "Href": "/services/interior-painting/residential",
+              "IsActive": false
+            },
+            {
+              "Title": "Commercial",
+              "Href": "/services/interior-painting/commercial",
+              "IsActive": false
+            }
+          ]
+        },
+        {
+          "Title": "Exterior Painting",
+          "Href": "/services/exterior-painting",
+          "IsActive": false,
+          "SubMenuItems": [
+            {
+              "Title": "Residential",
+              "Href": "/services/exterior-painting/residential",
+              "IsActive": false
+            },
+            {
+              "Title": "Commercial",
+              "Href": "/services/exterior-painting/commercial",
+              "IsActive": false
+            }
+          ]
+        },
+        {
+          "Title": "Wallpaper Installation & Removal",
+          "Href": "/services/wallpaper",
+          "IsActive": false
+        },
+        {
+          "Title": "Decorative & Specialty Finishes",
+          "Href": "/services/decorative-finishes",
+          "IsActive": false
+        },
+        {
+          "Title": "Cabinet Painting & Refinishing",
+          "Href": "/services/cabinet-painting",
+          "IsActive": false
+        },
+        {
+          "Title": "Surface Preparation & Repairs",
+          "Href": "/services/surface-preparation",
+          "IsActive": false
+        },
+        {
+          "Title": "Epoxy Floor Coatings",
+          "Href": "/services/epoxy-floor",
+          "IsActive": false
+        },
+        {
+          "Title": "Staining & Varnishing",
+          "Href": "/services/staining-varnishing",
+          "IsActive": false
+        },
+        {
+          "Title": "Power Washing",
+          "Href": "/services/power-washing",
+          "IsActive": false
+        },
+        {
+          "Title": "Color Consultation",
+          "Href": "/services/color-consultation",
+          "IsActive": false
+        },
+        {
+          "Title": "Industrial Painting",
+          "Href": "/services/industrial-painting",
+          "IsActive": false
+        },
+        {
+          "Title": "Property Maintenance",
+          "Href": "/services/property-maintenance",
+          "IsActive": false
+        },
+        {
+          "Title": "Safety Coatings & Fireproofing",
+          "Href": "/services/safety-coatings",
+          "IsActive": false
+        }
+      ]
+    },
+    {
+      "Title": "Portfolio",
+      "Href": "/portfolio",
+      "IsActive": false,
+      "Icon": "fa-images",
+      "SubMenuItems": []
+    },
+    {
+      "Title": "Reviews",
+      "Href": "/reviews",
+      "IsActive": false,
+      "Icon": "fa-star",
+      "SubMenuItems": []
+    },
+    {
+      "Title": "Contact",
+      "Href": "/contact",
+      "IsActive": false,
+      "Icon": "fa-envelope",
+      "SubMenuItems": []
+    }
+  ]
+}

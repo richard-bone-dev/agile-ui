@@ -1,0 +1,149 @@
+﻿{
+  "PageTitleOptions": {
+    "Blog": {
+      "Image": {
+        "Src": "/images/blog/page-title.webp",
+        "Alt": "Blog",
+        "Title": "Our Blog",
+        "Animation": "fadeInLeftBig"
+      },
+      "PageTitle": {
+        "Text": "Blog",
+        "Animation": "fadeInUp"
+      },
+      "Subtitle": {
+        "Text": "Stay updated with our latest insights",
+        "Animation": "fadeInUp",
+        "Delay": 300
+      },
+      "Breadcrumb": [
+        {
+          "Text": "Home",
+          "Href": "/",
+          "IsActive": false
+        },
+        {
+          "Text": "Blog",
+          "Href": "/Blog",
+          "IsActive": true
+        }
+      ]
+    },
+    "Contact": {
+      "Image": {
+        "Src": "/images/contact/page-title.webp",
+        "Alt": "Contact Us",
+        "Title": "Get in Touch",
+        "Animation": "fadeInLeftBig"
+      },
+      "PageTitle": {
+        "Text": "Contact",
+        "Animation": "fadeInUp"
+      },
+      "Subtitle": {
+        "Text": "We'd love to hear from you!",
+        "Animation": "fadeInUp",
+        "Delay": 300
+      },
+      "Breadcrumb": [
+        {
+          "Text": "Home",
+          "Href": "/",
+          "IsActive": false
+        },
+        {
+          "Text": "Contact",
+          "Href": "/Contact",
+          "IsActive": true
+        }
+      ]
+    },
+    "Portfolio": {
+      "Image": {
+        "Src": "/images/portfolio/page-title.webp",
+        "Alt": "Portfolio",
+        "Title": "Our Work",
+        "Animation": "fadeInLeftBig"
+      },
+      "PageTitle": {
+        "Text": "Portfolio",
+        "Animation": "fadeInUp"
+      },
+      "Subtitle": {
+        "Text": "Take a look at our latest projects",
+        "Animation": "fadeInUp",
+        "Delay": 300
+      },
+      "Breadcrumb": [
+        {
+          "Text": "Home",
+          "Href": "/",
+          "IsActive": false
+        },
+        {
+          "Text": "Portfolio",
+          "Href": "/Portfolio",
+          "IsActive": true
+        }
+      ]
+    },
+    "Reviews": {
+      "Image": {
+        "Src": "/images/reviews/page-title.webp",
+        "Alt": "Reviews",
+        "Title": "Customer Reviews",
+        "Animation": "fadeInLeftBig"
+      },
+      "PageTitle": {
+        "Text": "Reviews",
+        "Animation": "fadeInUp"
+      },
+      "Subtitle": {
+        "Text": "What our valued customers say",
+        "Animation": "fadeInUp",
+        "Delay": 300
+      },
+      "Breadcrumb": [
+        {
+          "Text": "Home",
+          "Href": "/",
+          "IsActive": false
+        },
+        {
+          "Text": "Reviews",
+          "Href": "/Reviews",
+          "IsActive": true
+        }
+      ]
+    },
+    "Services": {
+      "Image": {
+        "Src": "/images/services/page-title.webp",
+        "Alt": "Services",
+        "Title": "Our Services",
+        "Animation": "fadeInLeftBig"
+      },
+      "PageTitle": {
+        "Text": "Services",
+        "Animation": "fadeInUp"
+      },
+      "Subtitle": {
+        "Text": "Explore our wide range of services",
+        "Animation": "fadeInUp",
+        "Delay": 300
+      },
+      "Breadcrumb": [
+        {
+          "Text": "Home",
+          "Href": "/",
+          "IsActive": false
+        },
+        {
+          "Text": "Services",
+          "Href": "/Services",
+          "IsActive": true
+        }
+      ]
+    }
+  }
+}

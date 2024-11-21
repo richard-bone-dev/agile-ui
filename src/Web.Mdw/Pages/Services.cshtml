@@ -1,0 +1,36 @@
+﻿@page
+@using Domain.Services
+@using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Razor.Components
+@using Razor.ViewModels.Pages
+@using Web.Mdw.Pages
+
+@inject ILayoutManager LayoutManager
+
+@model ServicesModel
+
+@{
+	Layout = LayoutManager.GetLayout();
+
+	var model = Model.PageViewModel as ServicesPageViewModel;
+}
+
+
+<!-- Page Title
+============================================= -->
+@* @Html.DisplayFor(_ => model.PageTitle) *@
+@await Component.InvokeAsync("PageTitle", new { pageName = "Services" })
+<!-- .page-title end -->
+
+
+<!-- Content
+============================================= -->
+<section id="content">
+
+	<div class="content-wrap">
+
+		@(await Component.InvokeAsync<ServicesViewComponent>())
+
+	</div>
+</section><!-- #content end -->

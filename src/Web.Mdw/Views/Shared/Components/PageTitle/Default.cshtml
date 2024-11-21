@@ -1,0 +1,72 @@
+﻿@model PageTitleOptions
+
+@if (Model != null)
+{
+    <section class="page-title page-title-parallax parallax dark">
+
+        <img src="@Model.Image.Src" class="parallax-bg">
+        @* @Html.DisplayFor(m => m.Background) *@
+
+        <div class="container">
+
+            <div class="page-title-row">
+
+                <div class="page-title-content">
+                    <h1 data-animate="fadeInUp">@Model.PageTitle.Text</h1>
+                    <span data-animate="fadeInUp" data-delay="300">@Model.Subtitle.Text</span>
+                </div>
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        @foreach (var item in Model.Breadcrumb)
+                        {
+                            <li class="breadcrumb-item active" aria-current="page">@item.Text</li>
+                        }
+                    </ol>
+                </nav>
+
+            </div>
+
+        </div>
+
+    </section>
+@*     <section class="page-title page-title-parallax parallax dark" data-bs-theme="dark">
+        <img data-animate="@Model.Image.Animation"
+             src="@Model.Image.Src"
+             alt="@Model.Image.Alt"
+             title="@Model.Image.Title"
+             class="@Model.Image.Animation">
+        <div class="container">
+            <div class="page-title-row">
+                <div class="page-title-content">
+                    <h1 data-animate="@Model.PageTitle.Animation" class="@Model.PageTitle.Animation">
+                        @Model.PageTitle.Text
+                    </h1>
+                    <span data-animate="@Model.Subtitle.Animation"
+                          data-delay="@Model.Subtitle.Delay"
+                          class="@Model.Subtitle.Animation">
+                        @Model.Subtitle.Text
+                    </span>
+                </div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        @foreach (var item in Model.Breadcrumb)
+                        {
+                            <li class="breadcrumb-item @(item.IsActive ? "active" : "")">
+                                @if (!item.IsActive)
+                                {
+                                    <a href="@item.Href">@item.Text</a>
+                                }
+                                else
+                                {
+                                    @item.Text
+                                }
+                            </li>
+                        }
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section> *@
+}

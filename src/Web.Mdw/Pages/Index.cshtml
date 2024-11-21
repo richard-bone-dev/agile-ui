@@ -1,0 +1,145 @@
+﻿@page
+@using Domain.Constants
+@using Domain.Services
+@using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Razor.Components
+@using Razor.ViewModels.Pages
+@using Web.Mdw.Pages
+
+@inject ILayoutManager LayoutManager
+
+@model IndexModel
+
+@{
+	Layout = LayoutManager.GetLayout();
+
+	var model = Model.PageViewModel as IndexPageViewModel;
+}
+
+@section styles {
+	@* 	<abp-style src="/Pages/Index.css" /> *@
+}
+
+
+@section scripts {
+}
+
+<section id="content">
+
+	<div class="content-wrap">
+
+
+		<!-- About Us
+		============================================= -->
+		@(await Component.InvokeAsync<AboutUsViewComponent>())
+
+		<!-- ChooseUs
+		============================================= -->
+		@(await Component.InvokeAsync<ChooseUsViewComponent>())
+
+		<!-- Introduction
+		============================================= -->
+		@(await Component.InvokeAsync<IntroductionViewComponent>())
+
+		<!-- Services
+		============================================= -->
+		@Html.DisplayFor(m => model.Body.Services)
+
+
+		<!-- FeaturedWorks
+		============================================= -->
+		@*@if (model.FeaturedWorks != null)
+		{
+		await Component.InvokeAsync<FeaturedWorksViewComponent>()
+		}*@
+
+		<!-- Instagram
+		============================================= -->
+		@* @(await Component.InvokeAsync<InstagramViewComponent>()) *@
+
+		<!-- GoogleReviews
+		============================================= -->
+		@* <div class="line"></div> *@
+
+		@* @(await Component.InvokeAsync<GoogleReviewsViewComponent>()) *@
+
+		@* <div class="line"></div> *@
+
+		<!-- Twitter
+		============================================= -->
+		@* @(await Component.InvokeAsync<TwitterViewComponent>()) *@
+
+
+		@* 		<div class="line"></div> *@
+
+		@* 		<div class="container mt-5">
+
+		<div class="row g-5 col-mb-50">
+
+		<div class="col-lg-8">
+
+		<!-- Recent Posts
+		============================================= -->
+		@(await Component.InvokeAsync<RecentPostsViewComponent>()) <!-- #recent posts end -->
+
+		</div>
+
+		<div class="col-lg-4">
+
+		<!-- Opening Hours
+		============================================= -->
+		@(await Component.InvokeAsync<OpeningHoursViewComponent>()) <!-- #opening hours end -->
+		<!-- Testimonials
+		============================================= -->
+		@(await Component.InvokeAsync<TestimonialsViewComponent>()) <!-- #testimonials end -->
+
+		</div>
+
+		</div>
+
+		</div> *@
+
+	</div>
+
+</section>
+
+
+<!-- About Us Editor Template Container -->
+<div class="modal fade" id="aboutUsModal" tabindex="-1" aria-labelledby="aboutUsModalLabel" aria-hidden="true">
+
+	<div class="modal-dialog">
+
+		<div class="modal-content">
+
+			<div class="modal-header">
+
+				<h5 class="modal-title" id="aboutUsModalLabel">Edit About Us</h5>
+
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+			</div>
+
+			<div class="modal-body">
+
+				<form id="aboutUsForm" method="post" action="@Url.Action("SaveAboutUs")">
+
+					@Html.EditorFor(model => model)
+
+					<div class="modal-footer">
+
+						<button type="button" class="btn btn-primary" id="saveAboutUsButton">Save Changes</button>
+
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+					</div>
+
+				</form>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>

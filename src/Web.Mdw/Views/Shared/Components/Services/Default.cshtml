@@ -1,0 +1,74 @@
+﻿@model ServicesOptions
+
+<div class="container">
+    <div class="heading-block text-center">
+        <h3>@Html.Raw(Model.Title)</h3>
+        <span>@Html.Raw(Model.Subtitle)</span>
+    </div>
+
+    <div class="row col-mb-50 justify-content-center">
+        @foreach (var item in Model.Items)
+        {
+            <div class="col-lg-4 col-md-12">
+                <div class="card border-0 shadow-sm h-shadow shadow-ts p-3" style="background: url('@item.ImageUrl') no-repeat top center / cover;">
+                    <div class="card-body">
+                        <h6 class="fw-normal text-uppercase ls-2 text-black-50 mb-2">@item.Category</h6>
+                        <h3 class="card-title h2 fw-bold mb-4">
+                            @item.Title
+                        </h3>
+                        <p class="card-text mb-5">@item.Description</p>
+                        <a href="@item.LinkUrl"><i class="@item.ButtonIcon h4 icon-stacked text-center rounded-circle bg-dark text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@* <div class="container">
+
+    <div class="heading-block text-center">
+        <h3><span>Curtain</span> & <span>Blind</span> Fitting Services</h3>
+        <span>Here's what we can do for you!</span>
+    </div>
+
+    <div class="row col-mb-50 justify-content-center">
+        <div class="col-lg-4 col-md-12">
+            <div class="card border-0 shadow-sm h-shadow shadow-ts p-3" style="background: url('/images/services/bay.jpg') no-repeat top center / cover;">
+                <div class="card-body">
+                    <h6 class="fw-normal text-uppercase ls-2 text-black-50 mb-2">Curtains</h6>
+                    <h3 class="card-title h2 fw-bold mb-4">
+                        Hanging & Dressing
+                    </h3>
+                    <p class="card-text mb-5">Erind <span>onTrack</span> professional curtain hanging and dressing service ensures your curtains look great and fit perfectly. Explore how we can help match your style and home.</p>
+                    <a href="#"><i class="bi-arrow-right h4 icon-stacked text-center rounded-circle bg-dark text-white"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+            <div class="card border-0 shadow-sm h-shadow shadow-ts p-3" style="background: url('/images/services/blinds.jpg') no-repeat top center / cover;">
+                <div class="card-body">
+                    <h6 class="fw-normal text-uppercase ls-2 text-white-50 mb-2">Blinds</h6>
+                    <h3 class="card-title text-white h2 fw-bold mb-4">
+                        Installation
+                    </h3>
+                    <p class="card-text text-white mb-5">Get your poles and tracks installed with precision for smooth curtain operation and a polished look. Erind <span>onTrack</span>'s expert fitting ensures long-lasting support.</p>
+                    <a href="#"><i class="bi-arrow-right h4 icon-stacked text-center rounded-circle bg-dark text-white"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+            <div class="card border-0 shadow-sm h-shadow shadow-ts p-3" style="background: url('/images/services/poles.jpg') no-repeat top center / cover;">
+                <div class="card-body">
+                    <h6 class="fw-normal text-uppercase ls-2 text-black-50 mb-2">Poles & Tracks</h6>
+                    <h3 class="card-title h2 fw-bold mb-4">
+                        Fitting
+                    </h3>
+                    <p class="card-text mb-5">Whether you are an interior designer or a private individual we work closely with you always offering expert advice to ensure your designs, projects and expectations</p>
+                    <a href="#"><i class="bi-arrow-right h4 icon-stacked text-center rounded-circle bg-dark text-white"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div> *@

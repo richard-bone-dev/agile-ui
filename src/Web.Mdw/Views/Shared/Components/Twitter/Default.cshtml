@@ -1,0 +1,49 @@
+﻿@model IntroductionOptions;
+
+<div class="container">
+
+    <div class="heading-block mt-4 text-center">
+
+        <h3>Posts by <span>@Html.Encode("@ErindOnTrack")</span></h3>
+
+    </div>
+
+    <div class='sk-ww-twitter-feed' data-embed-id='25454479'></div>
+
+    <script type="text/javascript">
+
+        (function (window, document) {
+            var script = document.createElement('script');
+            script.src = 'https://widgets.sociablekit.com/twitter-feed/widget.js';
+            script.async = true;
+            script.defer = true;
+
+            // Function to limit the number of reviews displayed and remove branding
+            function cleanUpReviews() {
+                // Limit the number of reviews
+                var reviews = document.querySelectorAll('.sk_twitter_feed_data_post_item');
+                if (reviews.length > 5) {
+                    for (var i = 5; i < reviews.length; i++) {
+                        reviews[i].parentNode.removeChild(reviews[i]);
+                    }
+                }
+
+                // Remove any branding elements
+                var branding = document.querySelectorAll('.sk_branding');
+                branding.forEach(function (element) {
+                    element.parentNode.removeChild(element);
+                });
+            }
+
+            // Listen for the script to load and then execute the cleanup function
+            script.onload = function () {
+                // Assuming reviews might load dynamically after script execution, use a small timeout
+                setTimeout(cleanUpReviews, 1000); // Adjust the timeout duration as needed
+            };
+
+            document.head.appendChild(script);
+        })(window, document);
+
+    </script>
+
+</div>

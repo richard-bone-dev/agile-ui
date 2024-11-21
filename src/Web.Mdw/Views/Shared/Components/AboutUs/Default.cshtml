@@ -1,0 +1,28 @@
+﻿@model AboutUsOptions;
+
+@if (Model != null)
+{
+    <div class="container position-relative">
+        <div class="row align-items-center col-mb-50">
+            <div class="col-md-4 text-center">
+                <img data-animate="@Model.Image.Animation"
+                     src="@Model.Image.Src"
+                     alt="@Model.Image.Alt"
+                     title="@Model.Image.Title"
+                     class="@Model.Image.Animation">
+            </div>
+            <div class="col-md-8 text-center text-md-start">
+                <div>
+                    <h3>@Html.Raw(Model.Title)</h3>
+                </div>
+                <p>@Model.P1</p>
+                <p>@Model.P2</p>
+                <span>
+                    <a href="@Model.CallToAction.Href" class="@Model.CallToAction.Class">
+                        @Model.CallToAction.Text
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+}

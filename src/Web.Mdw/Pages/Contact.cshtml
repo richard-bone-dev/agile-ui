@@ -1,0 +1,72 @@
+﻿@page
+@using Domain.Services
+@using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Razor.Components
+@using Razor.Models
+@using Razor.ViewModels.Pages
+@using Web.Mdw.Pages
+
+@inject ILayoutManager LayoutManager
+
+@model ContactModel
+
+@{
+    Layout = LayoutManager.GetLayout();
+
+    var model = Model.PageViewModel as ContactPageViewModel;
+}
+
+
+<!-- Page Title
+============================================= -->
+@await Component.InvokeAsync("PageTitle", new { pageName = "Contact" })
+
+<!-- .page-title end -->
+
+
+<!-- Content
+============================================= -->
+<section id="content">
+
+    <div class="row m-3">
+
+        <div id="successToast" class="alert alert-success mb-5" role="alert" aria-live="assertive" aria-atomic="true" style="position: relative; display: none;">
+            Your message has been sent successfully!
+            <br />
+            Thanks for getting in touch! One of our trained specialists will respond within 24 hours, Monday to Friday.
+        </div>
+
+    </div>
+
+    <div class="content-wrap">
+
+        <div class="container">
+
+            <div class="row gx-5 col-mb-80">
+
+                <h3>Request a Quote or Further Information</h3>
+
+                <p class="card-text mb-5">
+                    Share your ideas and we'll get back to you with recommendations.
+                </p>
+
+                <div id="successMessage" class="alert alert-success mb-5" style="display: none;">
+                    <strong>Your message has been sent successfully!</strong>
+                    <br />
+                    Thanks for getting in touch! One of our trained specialists will respond within 24 hours, Monday to Friday.
+                </div>
+
+                @Html.Partial("Partials/_ContactForm", new ContactForm())
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+@Html.DisplayFor(m => model.Body.ContactMap)
+
+@Html.DisplayFor(m => model.Body.MapMarker)

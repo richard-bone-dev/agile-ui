@@ -1,0 +1,34 @@
+﻿@model IntroductionOptions
+
+@if (Model != null)
+{
+    <div class="container position-relative">
+        <div class="row align-items-center col-mb-50">
+            <div class="col-md-4 text-center">
+                <img data-animate="@Model.Image.Animation"
+                     src="@Model.Image.Src"
+                     alt="@Model.Image.Alt"
+                     title="@Model.Image.Title"
+                     class="@Model.Image.Animation">
+            </div>
+            <div class="col-md-8 text-center text-md-start">
+                <div>
+                    <h1>@Html.Raw(Model.Title)</h1>
+                </div>
+                <h3>@Model.Subtitle</h3>
+                <p>@Model.Description</p>
+                <div class="mt-4">
+                    @if (Model.Buttons != null && Model.Buttons.Any())
+                    {
+                        @foreach (var button in Model.Buttons)
+                        {
+                            <a href="@button.Href" class="@button.Class me-2">
+                                @button.Text
+                            </a>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+}

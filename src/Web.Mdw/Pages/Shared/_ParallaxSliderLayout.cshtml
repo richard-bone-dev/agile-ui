@@ -1,0 +1,313 @@
+﻿@using Domain.Constants
+@using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.Mvc.Localization
+@using System.ComponentModel
+@using System.Globalization
+@using Razor.Components
+@using Razor.Models;
+@using Razor.TagHelpers;
+@using Razor.ViewModels.Layout
+@using Application.Pages.Models;
+
+@inject IHttpContextAccessor httpContext
+
+@model LayoutModel
+@{
+	var routeValue = @httpContext?.HttpContext?.Request.RouteValues?.FirstOrDefault().Value;
+
+	var model = Model.PageViewModel;
+
+	const string IndexRoute = "/Index";
+}	
+
+<!DOCTYPE html>
+
+<html lang="en-gb">
+<head>
+
+	@Html.DisplayFor(m => model.Head)
+
+	<style>
+		.re-shadow {
+			webkit-box-shadow: 0px 20px 50px 0px rgba(0,0,0,0.5);
+			-moz-box-shadow: 0px 20px 50px 0px rgba(0,0,0,0.5);
+			box-shadow: 0px 20px 50px 0px rgba(0,0,0,0.5)
+		}
+
+		.re-shadow2 {
+			webkit-box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.25);
+			-moz-box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.25);
+			box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.25)
+		}
+
+		.re-overflow {
+			overflow: hidden !important
+		}
+
+		.tp-phonenum {
+			pointer-events: none !important;
+			color: #0064e3 !important;
+			text-decoration: none !important;
+			font-weight: 700
+		}
+
+		#rev_slider_222_1 .metis.tparrows {
+			background: rgba(255,255,255,1);
+			padding: 0px;
+			transition: all 0.3s;
+			-webkit-transition: all 0.3s;
+			width: 40px;
+			height: 40px;
+			box-sizing: border-box
+		}
+
+			#rev_slider_222_1 .metis.tparrows:hover {
+				background: rgba(255,255,255,0.75)
+			}
+
+			#rev_slider_222_1 .metis.tparrows:before {
+				color: rgb(0,0,0);
+				transition: all 0.3s;
+				-webkit-transition: all 0.3s
+			}
+
+			#rev_slider_222_1 .metis.tparrows:hover:before {
+				transform: scale(1.5)
+			}
+
+		.hermes.tp-bullets {
+		}
+
+		.hermes .tp-bullet {
+			overflow: hidden;
+			border-radius: 50%;
+			width: 16px;
+			height: 16px;
+			background-color: rgba(0,0,0,0);
+			box-shadow: inset 0 0 0 2px rgb(255,255,255);
+			-webkit-transition: background 0.3s ease;
+			transition: background 0.3s ease;
+			position: absolute
+		}
+
+			.hermes .tp-bullet:hover {
+				background-color: rgba(0,0,0,0.21)
+			}
+
+			.hermes .tp-bullet:after {
+				content: ' ';
+				position: absolute;
+				bottom: 0;
+				height: 0;
+				left: 0;
+				width: 100%;
+				background-color: rgb(255,255,255);
+				box-shadow: 0 0 1px rgb(255,255,255);
+				-webkit-transition: height 0.3s ease;
+				transition: height 0.3s ease
+			}
+
+			.hermes .tp-bullet.selected:after {
+				height: 100%
+			}
+	</style>
+
+	@await RenderSectionAsync("Styles", required: false)
+
+</head>
+
+<body class="">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper">
+
+		<!-- Header
+		============================================= -->
+		@Html.DisplayFor(m => model.TopNavBar)<!-- #header end -->
+
+
+		<!-- MainNavBar
+		============================================= -->
+		@(await Component.InvokeAsync<MainNavbarTransparentViewComponent>())
+		@* @Html.DisplayFor(m => model.MainNavBar)<!-- #mainnavbar end --> *@
+
+
+		<!-- Slider
+		============================================= -->
+ 		@if (routeValue.Equals(IndexRoute))
+		{
+			@* @(await Component.InvokeAsync<ParallaxSliderViewComponent>()) *@
+		}
+
+
+		<!-- Content
+		============================================= -->
+		@RenderBody()<!-- #content end -->
+
+
+		<!-- NewsLetter
+		============================================= -->
+		@(await Component.InvokeAsync<NewsLetterViewComponent>())
+
+
+		<!-- Suppliers
+		============================================= -->
+		@* @Html.DisplayFor(m => model.Footer.Suppliers) *@
+		@(await Component.InvokeAsync<SuppliersViewComponent>())
+
+
+		<!-- Footer
+		============================================= -->
+		@Html.DisplayFor(m => model.Footer)
+
+
+
+	</div><!-- #wrapper end -->
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="fas fa-angle-up"></div>
+
+	@await RenderSectionAsync("Scripts", required: false)
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="~/js/jquery.js"></script>
+	<script src="~/js/functions.js"></script>
+
+	<!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
+	<script src="~/include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script src="~/include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+	<!-- SLIDER REVOLUTION EXTENSIONS  -->
+	<script src="~/include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+	<script src="~/include/rs-plugin/js/extensions/revolution.extension.carousel.min.js"></script>
+	<script src="~/include/rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
+	<script src="~/include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script src="~/include/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
+	<script src="~/include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script src="~/include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+	<script src="~/include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script src="~/include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+
+	<!-- ADD-ONS JS FILES -->
+	<script>
+		var revapi222,
+			tpj;
+
+		(function () {
+
+			if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded", onLoad); else onLoad();
+
+			function onLoad() {
+				if (tpj === undefined) { tpj = jQuery; if ("off" == "on") tpj.noConflict(); }
+
+				if (tpj("#rev_slider_222_1").revolution == undefined) {
+					revslider_showDoubleJqueryError("#rev_slider_222_1");
+				} else {
+					revapi222 = tpj("#rev_slider_222_1").show().revolution({
+						sliderType: "standard",
+						jsFileLocation: "~/include/rs-plugin/js/",
+						sliderLayout: "fullwidth",
+						dottedOverlay: "none",
+						delay: 10000,
+						navigation: {
+							keyboardNavigation: "off",
+							keyboard_direction: "horizontal",
+							mouseScrollNavigation: "off",
+							mouseScrollReverse: "default",
+							onHoverStop: "off",
+							touch: {
+								touchenabled: "on",
+								touchOnDesktop: "off",
+								swipe_threshold: 75,
+								swipe_min_touches: 1,
+								swipe_direction: "horizontal",
+								drag_block_vertical: false
+							},
+							arrows: {
+								style: "metis",
+								enable: true,
+								hide_onmobile: true,
+								hide_under: 778,
+								hide_onleave: false,
+								tmp: '',
+								left: {
+									h_align: "left",
+									v_align: "center",
+									h_offset: 0,
+									v_offset: 0
+								},
+								right: {
+									h_align: "right",
+									v_align: "center",
+									h_offset: 0,
+									v_offset: 0
+								}
+							}
+							,
+							bullets: {
+								enable: true,
+								hide_onmobile: false,
+								style: "hermes",
+								hide_onleave: false,
+								direction: "horizontal",
+								h_align: "center",
+								v_align: "bottom",
+								h_offset: 0,
+								v_offset: 20,
+								space: 5,
+								tmp: ''
+							}
+						},
+						responsiveLevels: [1240, 1024, 778, 480],
+						visibilityLevels: [1240, 1024, 778, 480],
+						gridwidth: [1240, 1024, 778, 480],
+						gridheight: [700, 700, 700, 700],
+						lazyType: "none",
+						parallax: {
+							type: "scroll",
+							origo: "slidercenter",
+							speed: 400,
+							speedbg: 0,
+							speedls: 0,
+							levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 51, 55],
+						},
+						shadow: 0,
+						spinner: "spinner5",
+						stopLoop: "off",
+						stopAfterLoops: -1,
+						stopAtSlide: -1,
+						shuffle: "off",
+						autoHeight: "off",
+						hideThumbsOnMobile: "off",
+						hideSliderAtLimit: 0,
+						hideCaptionAtLimit: 0,
+						hideAllCaptionAtLilmit: 0,
+						debugMode: false,
+						fallbacks: {
+							simplifyAll: "off",
+							nextSlideOnWindowFocus: "off",
+							disableFocusListener: false,
+						}
+					});
+				}; /* END OF revapi call */
+
+				if (typeof ExplodingLayersAddOn !== "undefined") ExplodingLayersAddOn(tpj, revapi222);
+			}; /* END OF ON LOAD FUNCTION */
+		}()); /* END OF WRAPPING FUNCTION */
+	</script>
+
+	<!-- Bootstrap File Upload Plugin -->
+	<script src="/js/components/bs-filestyle.js"></script>
+
+
+
+	@section scripts {
+		<partial name="_ValidationScriptsPartial" />
+	}
+
+
+</body>
+
+</html>

@@ -1,0 +1,404 @@
+{
+  "name": "MD Wigmore",
+  "shortName": "Mdw",
+  "sites": [
+    {
+      "name": "MD Wigmore",
+      "key": "Mdw",
+      "htmlName": "MD <span>Wigmore</span>",
+      "description": "Painting & Decorating Contractors",
+      "phone": "07930 645 116",
+      "email": "mdwigmore@gmail.com",
+      "publicUrl": "https://mdwigmore.com",
+      "localUrl": "https://localhost:70432",
+      "alias": "MD Wigmore | Painting & Decorating Services",
+      "pages": [
+        {
+          "key": "Index",
+          "route": "/",
+          "text": "Index",
+          "layout": {
+            "header": {
+              "mainNavBar": {
+                "logo": null,
+                "items": [
+                  {
+                    "title": "Home",
+                    "href": "/",
+                    "isActive": true,
+                    "icon": "home-icon",
+                    "subMenuItems": []
+                  },
+                  {
+                    "title": "Services",
+                    "href": "services",
+                    "isActive": false,
+                    "icon": "services-icon",
+                    "subMenuItems": [
+                      {
+                        "title": "Curtains",
+                        "href": "services/curtains",
+                        "isActive": false,
+                        "subMenuItems": [
+                          {
+                            "title": "Interior",
+                            "href": "services/curtains/interior",
+                            "isActive": false,
+                            "subMenuItems": [
+                              {
+                                "title": "Privacy",
+                                "href": "services/curtains/interior/privacy",
+                                "isActive": false,
+                                "subMenuItems": []
+                              },
+                              {
+                                "title": "Sheer",
+                                "href": "services/curtains/interior/sheer",
+                                "isActive": false,
+                                "subMenuItems": []
+                              }
+                            ]
+                          },
+                          {
+                            "title": "Bay Windows",
+                            "href": "services/curtains/bay-windows",
+                            "isActive": false,
+                            "subMenuItems": []
+                          },
+                          {
+                            "title": "Track Fitting",
+                            "href": "services/curtains/track-fitting",
+                            "isActive": false,
+                            "subMenuItems": []
+                          },
+                          {
+                            "title": "Pole Fitting",
+                            "href": "services/curtains/pole-fitting",
+                            "isActive": false,
+                            "subMenuItems": []
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Blinds",
+                        "href": "services/blinds",
+                        "isActive": false,
+                        "subMenuItems": [
+                          {
+                            "title": "Roman",
+                            "href": "services/blinds/roman",
+                            "isActive": false,
+                            "subMenuItems": []
+                          },
+                          {
+                            "title": "Venetian",
+                            "href": "services/blinds/venetian",
+                            "isActive": false,
+                            "subMenuItems": []
+                          },
+                          {
+                            "title": "Roller",
+                            "href": "services/blinds/roller",
+                            "isActive": false,
+                            "subMenuItems": []
+                          },
+                          {
+                            "title": "Repairs",
+                            "href": "services/blinds/repairs",
+                            "isActive": false,
+                            "subMenuItems": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Reviews",
+                    "href": "reviews",
+                    "isActive": false,
+                    "icon": "reviews-icon",
+                    "subMenuItems": []
+                  },
+                  {
+                    "title": "Portfolio",
+                    "href": "portfolio",
+                    "isActive": false,
+                    "icon": "portfolio-icon",
+                    "subMenuItems": []
+                  },
+                  {
+                    "title": "Blog",
+                    "href": "blog",
+                    "isActive": false,
+                    "icon": "blog-icon",
+                    "subMenuItems": []
+                  },
+                  {
+                    "title": "Contact",
+                    "href": "contact",
+                    "isActive": false,
+                    "icon": "contact-icon",
+                    "subMenuItems": []
+                  }
+                ]
+              },
+              "topNavBar": {
+                "items": [
+                  {
+                    "title": "Home",
+                    "href": "/",
+                    "isActive": true,
+                    "icon": "home-icon",
+                    "subMenuItems": []
+                  },
+                  {
+                    "title": "0207 112 7588",
+                    "href": "tel:0207 112 7588",
+                    "isActive": false,
+                    "icon": "",
+                    "subMenuItems": []
+                  }
+                ],
+                "socialMedia": {
+                  "items": [
+                    {
+                      "title": "Facebook",
+                      "fa": "fa-brands fa-facebook-f",
+                      "href": "https://www.facebook.com/mdwigmore",
+                      "bg": "h-bg-facebook"
+                    },
+                    {
+                      "title": "Instagram",
+                      "fa": "fa-brands fa-instagram",
+                      "href": "https://www.instagram.com/erind_ontrack",
+                      "bg": "h-bg-instagram"
+                    },
+                    {
+                      "title": "Twitter",
+                      "fa": "fa-brands fa-x",
+                      "href": "https://www.twitter.com/mdwigmore",
+                      "bg": "h-bg-twitter"
+                    },
+                    {
+                      "title": "0207 112 7588",
+                      "fa": "fa-solid fa-phone",
+                      "href": "tel:0207 112 7588",
+                      "bg": "h-bg-danger"
+                    },
+                    {
+                      "title": "mdwigmore@gmail.com",
+                      "fa": "bi-envelope-fill",
+                      "href": "mailto:mdwigmore@gmail.com",
+                      "bg": "h-bg-email3"
+                    }
+                  ]
+                }
+              }
+            },
+            "footer": {
+              "items": []
+            }
+          },
+          "head": {
+            "seo": {
+              "title": "MD Wigmore | Painting \u0026 Decorating Contractors",
+              "description": "MD Wigmore | Over 20 Years of Professional Painting &amp; Decorating.",
+              "keywords": "Curtain fitting, blind fitting, Surrey, London, installation",
+              "canonicalUrl": "https://mdwigmore.com"
+            },
+            "meta": {
+              "items": [
+                {
+                  "type": "name",
+                  "nameOrProperty": "description",
+                  "content": "Professional curtain and blind fitting services across Surrey and London."
+                },
+                {
+                  "type": "property",
+                  "nameOrProperty": "og:title",
+                  "content": "Erind onTrack | Curtain \u0026 Blind Fitting"
+                },
+                {
+                  "type": "property",
+                  "nameOrProperty": "og:description",
+                  "content": "Curtain and blind fitting services in Surrey and London."
+                },
+                {
+                  "type": "property",
+                  "nameOrProperty": "og:type",
+                  "content": "website"
+                },
+                {
+                  "type": "property",
+                  "nameOrProperty": "og:url",
+                  "content": "https://mdwigmore.com"
+                },
+                {
+                  "type": "property",
+                  "nameOrProperty": "og:image",
+                  "content": "/images/og-image.jpg"
+                },
+                {
+                  "type": "property",
+                  "nameOrProperty": "og:site_name",
+                  "content": "Erind onTrack"
+                },
+                {
+                  "type": "name",
+                  "nameOrProperty": "viewport",
+                  "content": "width=device-width, initial-scale=1.0"
+                }
+              ]
+            },
+            "stylesheets": {
+              "items": [
+                {
+                  "rel": "preconnect",
+                  "href": "https://fonts.googleapis.com",
+                  "media": "",
+                  "crossOrigin": false
+                },
+                {
+                  "rel": "preconnect",
+                  "href": "https://fonts.gstatic.com",
+                  "media": "",
+                  "crossOrigin": false
+                },
+                {
+                  "rel": "stylesheet",
+                  "href": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400\u0026family=Raleway:wght@300;400;500;600;700;800;900\u0026family=Roboto:wght@400;500;700\u0026display=swap",
+                  "media": "",
+                  "crossOrigin": false
+                },
+                {
+                  "rel": "stylesheet",
+                  "href": "/style.css",
+                  "media": "",
+                  "crossOrigin": false
+                },
+                {
+                  "rel": "stylesheet",
+                  "href": "/css/font-icons.css",
+                  "media": "",
+                  "crossOrigin": false
+                },
+                {
+                  "rel": "stylesheet",
+                  "href": "/include/rs-plugin/css/settings.css",
+                  "media": "screen",
+                  "crossOrigin": false
+                },
+                {
+                  "rel": "stylesheet",
+                  "href": "/include/rs-plugin/css/layers.css",
+                  "media": "",
+                  "crossOrigin": false
+                },
+                {
+                  "rel": "stylesheet",
+                  "href": "/include/rs-plugin/css/navigation.css",
+                  "media": "",
+                  "crossOrigin": false
+                },
+                {
+                  "rel": "stylesheet",
+                  "href": "/include/rs-plugin/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css",
+                  "media": "",
+                  "crossOrigin": false
+                },
+                {
+                  "rel": "stylesheet",
+                  "href": "/include/rs-plugin/fonts/font-awesome/css/font-awesome.css",
+                  "media": "",
+                  "crossOrigin": false
+                },
+                {
+                  "rel": "stylesheet",
+                  "href": "/css/custom.css",
+                  "media": "",
+                  "crossOrigin": false
+                }
+              ]
+            },
+            "openGraph": {
+              "items": [
+                {
+                  "property": "og:title",
+                  "content": "Erind onTrack | Curtain \u0026 Blind Fitting"
+                },
+                {
+                  "property": "og:description",
+                  "content": "Curtain and blind fitting services across Surrey and London."
+                },
+                {
+                  "property": "og:type",
+                  "content": "website"
+                },
+                {
+                  "property": "og:url",
+                  "content": "https://mdwigmore.com"
+                },
+                {
+                  "property": "og:image",
+                  "content": "/images/og-image.jpg"
+                },
+                {
+                  "property": "og:site_name",
+                  "content": "Erind onTrack"
+                }
+              ]
+            },
+            "twitter": {
+              "items": [
+                {
+                  "name": "twitter:card",
+                  "content": "summary_large_image"
+                },
+                {
+                  "name": "twitter:title",
+                  "content": "Erind onTrack | Curtain \u0026 Blind Fitting"
+                },
+                {
+                  "name": "twitter:description",
+                  "content": "Curtain and blind fitting services across Surrey and London."
+                },
+                {
+                  "name": "twitter:image",
+                  "content": "/images/twitter-image.jpg"
+                }
+              ]
+            },
+            "schema": {
+              "context": "https://schema.org",
+              "type": "LocalBusiness",
+              "name": "Erind onTrack",
+              "description": "Curtain and blind fitting services in Surrey and London. Professional installation for homes and businesses.",
+              "image": "https://mdwigmore.com/images/logo.png",
+              "address": {
+                "type": "PostalAddress",
+                "streetAddress": "London, KT8",
+                "addressLocality": "Surrey",
+                "addressRegion": "London",
+                "postalCode": "KT8",
+                "addressCountry": "GB"
+              },
+              "telephone": "0207 112 7588",
+              "email": "mdwigmore@gmail.com",
+              "url": "https://mdwigmore.com"
+            },
+            "address": {
+              "type": "PostalAddress",
+              "streetAddress": "London, KT8",
+              "addressLocality": "Surrey",
+              "addressRegion": "London",
+              "postalCode": "KT8",
+              "addressCountry": "GB"
+            }
+          },
+          "body": {
+          }
+        }
+      ]
+    }
+  ]
+}

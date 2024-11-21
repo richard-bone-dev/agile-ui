@@ -1,0 +1,14 @@
+﻿@model SuppliersOptions;
+
+@if (Model != null)
+{
+    <div class="container">
+
+        <ul class="clients-grid row row-cols-6 mt-2 mb-2 ml-0 pl-0 mr-o pr-0">
+
+            @Html.DisplayFor(model => model.Items)
+
+        </ul>
+
+    </div>
+}

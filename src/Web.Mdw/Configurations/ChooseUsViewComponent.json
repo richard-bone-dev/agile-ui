@@ -1,0 +1,78 @@
+﻿{
+  "ChooseUsOptions": {
+    "Title": "Why <span>Choose</span> Us?",
+    "Items": [
+      {
+        "Title": "20+ Years of Experience",
+        "Description": "Decades of expertise in painting & decorating",
+        "Icon": "fas fa-calendar-alt"
+      },
+      {
+        "Title": "Fully Insured",
+        "Description": "Public liability insurance up to £1m",
+        "Icon": "fas fa-shield-alt"
+      },
+      {
+        "Title": "Interior Painting",
+        "Description": "Expert interior painting to transform your space",
+        "Icon": "fas fa-home"
+      },
+      {
+        "Title": "Exterior Painting",
+        "Description": "Weather-resistant finishes for your property",
+        "Icon": "fas fa-paint-brush"
+      },
+      {
+        "Title": "Spray Painting",
+        "Description": "Smooth, fast, and even spray applications",
+        "Icon": "fas fa-spray-can"
+      },
+      {
+        "Title": "Wallpaper Hanging & Removal",
+        "Description": "Professional wallpaper installation and removal",
+        "Icon": "fas fa-scroll"
+      },
+      {
+        "Title": "Competitive Pricing",
+        "Description": "Top-notch service at a fair price",
+        "Icon": "fas fa-tags"
+      },
+      {
+        "Title": "Attention to Detail",
+        "Description": "Precision and care in every project",
+        "Icon": "fas fa-eye"
+      },
+      {
+        "Title": "Colour Consultation",
+        "Description": "Helping you choose the perfect colours",
+        "Icon": "fas fa-palette"
+      },
+      {
+        "Title": "Plastering & Preparation",
+        "Description": "Seamless finishes with our expert preparation",
+        "Icon": "fas fa-trowel"
+      },
+      {
+        "Title": "Clean & Tidy Workmanship",
+        "Description": "We leave your space clean and spotless",
+        "Icon": "fas fa-broom"
+      },
+      {
+        "Title": "Guaranteed Satisfaction",
+        "Description": "Our work comes with a satisfaction guarantee",
+        "Icon": "fas fa-thumbs-up"
+      },
+      {
+        "Title": "Specialist Finishes",
+        "Description": "Decorative finishes such as glossing and staining",
+        "Icon": "fas fa-brush"
+      },
+      {
+        "Title": "Client References Available",
+        "Description": "Testimonials from satisfied clients upon request",
+        "Icon": "fas fa-file-alt"
+      }
+    ]
+
+  }
+}

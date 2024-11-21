@@ -1,0 +1,25 @@
+﻿{
+  "IntroductionOptions": {
+    "Image": {
+      "Src": "/images/home/banner.jpg",
+      "Alt": "Professional Painting Services",
+      "Title": "Transforming Spaces with Expert Craftsmanship",
+      "Animation": "fadeInDown"
+    },
+    "Title": "Transforming Spaces with <span>Expert Craftsmanship</span>",
+    "Subtitle": "Over 20 Years of Excellence in Painting & Decorating",
+    "Description": "At MD Wigmore, we specialize in delivering high-quality painting and decorating services for residential and commercial spaces. Our expertise ensures flawless finishes, tailored to your unique vision.",
+    "Buttons": [
+      {
+        "Text": "Get a Free Quote",
+        "Href": "/get-a-quote",
+        "Class": "btn btn-primary m-0"
+      },
+      {
+        "Text": "View Our Projects",
+        "Href": "/projects",
+        "Class": "btn btn-secondary m-0"
+      }
+    ]
+  }
+}
